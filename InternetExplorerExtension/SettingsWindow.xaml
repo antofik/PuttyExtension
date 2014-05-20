@@ -1,0 +1,18 @@
+﻿<Window x:Class="InternetExplorerExtension.SettingsWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" Height="158" Width="472" ResizeMode="NoResize" WindowStartupLocation="CenterOwner" Title="Putty Extension Configuration">
+    <Grid>
+        <Button x:Name="cmdCancel" Content="Cancel" HorizontalAlignment="Left" Margin="379,97,0,0" VerticalAlignment="Top" Width="75" IsCancel="True"/>
+        <Button x:Name="cmdSave" Content="Save" HorizontalAlignment="Left" Margin="299,97,0,0" VerticalAlignment="Top" Width="75" IsDefault="True"/>
+        <TextBox x:Name="txtPuttyPath" HorizontalAlignment="Left" Height="23" Margin="144,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="285"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="Location of putty.exe"/><LineBreak/><Run/></TextBlock>
+        <Button x:Name="cmdPuttyPath" Content="..." HorizontalAlignment="Left" Margin="434,10,0,0" VerticalAlignment="Top" Width="20" RenderTransformOrigin="0.556,0.7" Height="23"/>
+        <TextBlock x:Name="txtError" HorizontalAlignment="Left" Margin="10,38,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="54" Width="444"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,103,0,0" TextWrapping="Wrap" Text="author: antofik@gmail.com" Foreground="#ccc" VerticalAlignment="Top"/>
+        <Button x:Name="cmdPuttyConfig" Content="Putty Config" HorizontalAlignment="Left" Margin="219,97,0,0" VerticalAlignment="Top" Width="75" IsDefault="True"/>
+
+    </Grid>
+</Window>
